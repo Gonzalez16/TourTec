@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Tour | Tecnologico de Tuxtla Gutierrez</title>
+<meta name="description" content="A sample 360° tour created by the Marzipano Tool." />
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="img/styles.css">
+
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    <a href="javascript:void(0)" class="scene" data-edificio="Entrada">
+      <li class="text">Entrada</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Edificio B">
+      <li class="text">Edificio B</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Cafeteria">
+      <li class="text">Cafeteria</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Biblioteca">
+      <li class="text">Biblioteca</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Cancha">
+      <li class="text">Cancha Basquetbol</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="CanchaTecha">
+      <li class="text">Cancha Techada</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Edificio D1">
+      <li class="text">Edificio D1</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Edificio Z">
+      <li class="text">Edificio Z</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="CanchaFut">
+      <li class="text">Cancha Futbool Rapido</li>
+    </a>
+    <a href="javascript:void(0)" class="scene" data-edificio="Campo">
+      <li class="text">Campo</li>
+    </a>
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="search">
+  <div class="buscar">
+  <input type="text" placeholder="Buscar" id="formulario">
+  <div class="btn">
+    <a id="boton">
+      <i class="icon-search"></i>
+    </a>
+  </div>
+  </div>
+  </a>
+  
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="./js/screenfull.js" ></script>
+<script src="./js/bowser.js" ></script>
+<script src="./js/marzipano.js" ></script>
+
+
+<script src="./data.js"></script>
+<script src="./index.js"></script>
+
+</body>
+</html>
