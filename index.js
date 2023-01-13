@@ -29,7 +29,6 @@
   var sceneListToggleElement = document.querySelector("#sceneListToggle");
   var autorotateToggleElement = document.querySelector("#autorotateToggle");
   var fullscreenToggleElement = document.querySelector("#fullscreenToggle");
-  var search = document.querySelector("#search");
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -75,10 +74,10 @@
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
 
   // Create scenes.
-  console.log('DataBefore', data.scenes);
-  data.scenes = data.scenes.slice(0, 3)
-  console.log('DataSlice', data.scenes);
-  var scenes = data.scenes.map(function (data) {
+  console.log("DataBefore", data.scenes);
+
+  const rawDataScenes = data.scenes;
+  function createScene(data) {
     /* var urlPrefix = "//www.marzipano.net/media"; */
     var source = Marzipano.ImageUrlSource.fromString("tiles/" + data.id + ".jpg");
     var geometry = new Marzipano.EquirectGeometry([{ width: 4000 }]);
@@ -104,24 +103,13 @@
       var element = createInfoHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
-    /* // create photo hotspots.
-    data.photoHotspots.forEach(function(hotspot){
-      var element = createPhotoHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, {yaw: hotspot.yaw, pitch: hotspot.pitch});
-    });
-
-    //create video hotpots.
-    data.videoHotspots.forEach(function(hotspot){
-    var element = createVideoHotspotElement(hotspot);
-    scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
-    }); */
 
     return {
       data: data,
       scene: scene,
       view: view,
     };
-  });
+  }
 
   // Set up autorotate, if enabled.
   var autorotate = Marzipano.autorotate({
@@ -156,49 +144,21 @@
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener("click", toggleSceneList);
 
-  // Start with the scene list open on desktop.
-  /*if (!document.body.classList.contains('mobile')) {
-    showSceneList();
-  }*/
-
-  // Set handler for scene switch.
-  /*scenes.forEach(function(scene) {
-    var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
-    el.addEventListener('click', function() {
-      switchScene(scene);
-      // On mobile, hide scene list after selecting a scene.
-      if (document.body.classList.contains('mobile')) {
-        hideSceneList();
-      }
-    });
-  });*/
-  const startedAt = Date.now();
-  scenes.forEach(function (scene, i) {
-    let siguienteElemento =
-      i + 1 < scenes.length && scenes[i].data.edificio == scenes[i + 1].data.edificio ? "true" : "false";
-    //El return se usa como un cotinue, aqui comprobamos que si la siguiente scena pertenece al mismo edificio de la iteracion actual
-    if (siguienteElemento == "true") {
-      return;
-    } else {
-      //los edificios con 0 hacen referencia a zonas que no son un edificio como tal
-      if (scenes[i].data.edificio == "0") {
-        return;
-      }
-      var el = document.querySelector('#sceneList .scene[data-edificio="' + scenes[i].data.edificio + '"]');
-      //console.log(scenes[i].data.edificio);
-      el.addEventListener("click", function () {
-        switchScene(scene);
+  function createMenuList() {
+    const links = document.querySelectorAll("#sceneList .scenes .scene");
+    links.forEach((link) => {
+      link.addEventListener("click", function () {
+        const buildingName = link.getAttribute("data-edificio");
+        const dataScene = rawDataScenes.find((e) => e.edificio === buildingName);
+        switchScene(dataScene);
         // On mobile, hide scene list after selecting a scene.
         if (document.body.classList.contains("mobile")) {
           hideSceneList();
         }
       });
-    }
-  });
-  const finishedAt = Date.now();
-  console.log('TimeInMS', { finishedAt, startedAt });
-  const elapsed = (finishedAt - startedAt) / 1000;
-  console.log("TimePassedCreatingScenes", elapsed);
+    });
+  }
+  createMenuList();
 
   // DOM elements for view controls.
   var viewUpElement = document.querySelector("#viewUp");
@@ -249,7 +209,9 @@
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
   }
 
-  function switchScene(scene) {
+  function switchScene(sceneRaw) {
+    console.log(sceneRaw);
+    const scene = createScene(sceneRaw);
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
@@ -262,6 +224,7 @@
     sceneNameElement.innerHTML = sanitize(scene.data.name);
   }
 
+  // Cuando le den exclusivamente click al menu traer las escenas de ese listado.
   function updateSceneList(scene) {
     for (var i = 0; i < sceneElements.length; i++) {
       var el = sceneElements[i];
@@ -271,11 +234,6 @@
         el.classList.remove("current");
       }
     }
-  }
-
-  function showSceneList() {
-    sceneListElement.classList.add("enabled");
-    sceneListToggleElement.classList.add("enabled");
   }
 
   function hideSceneList() {
@@ -431,112 +389,8 @@
     return wrapper;
   }
 
-  /* function createPhotoHotspotElement(hotspot){
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('info-hotspot');
-
-    // Create hotspot/tooltip header.
-    var header = document.createElement('div');
-
-     // Create image element.
-     var photo = document.createElement('img');
-     photo.src = 'img/photo.png';
-     header.appendChild(photo);
-
-     var photoWrapper = document.createElement('div');
-     //photoWrapper.classList.add('reveal-content');
-     var img = document.createElement('img');
-     img.src = 'tiles/' + hotspot.id + ".jpg";
-     photoWrapper.appendChild(img);
-
-     header.appendChild(photoWrapper);
-
-     wrapper.appendChild(header);
-
-    return wrapper;
-  } */
-
-  /* function createVideoHotspotElement(hotspot){
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('info-hotspot');
-
-    // Create hotspot/tooltip header.
-    var header = document.createElement('div');
-    header.classList.add('info-hotspot-header');
-
-    // Create image element.
-    var iconWrapper = document.createElement('div');
-    iconWrapper.classList.add('info-hotspot-icon-wrapper');
-    var icon = document.createElement('img');
-    icon.src = 'img/info.png';
-    icon.classList.add('info-hotspot-icon');
-    iconWrapper.appendChild(icon);
-
-    // Create title element.
-    var titleWrapper = document.createElement('div');
-    titleWrapper.classList.add('info-hotspot-title-wrapper');
-    var title = document.createElement('div');
-    title.classList.add('info-hotspot-title');
-    title.innerHTML = hotspot.title;
-    titleWrapper.appendChild(title);
-
-    // Create close element.
-    var closeWrapper = document.createElement('div');
-    closeWrapper.classList.add('info-hotspot-close-wrapper');
-    var closeIcon = document.createElement('img');
-    closeIcon.src = 'img/close.png';
-    closeIcon.classList.add('info-hotspot-close-icon');
-    closeWrapper.appendChild(closeIcon);
-
-    var videoWrapper = document.createElement('div');
-    videoWrapper.classList.add('info-hostpot-video-wrapper');
-    var video = document.createElement('video');
-    //video.src = "entrevistas/" + hotspot.id + ".mp4";
-    video.width = "380";
-    video.height = "200";
-    //console.log(data.scenes);
-    video.controls = "true";
-    video.classList.add('info-hotspot-video');
-    videoWrapper.appendChild(video);
-
-    // Construct header element.
-    header.appendChild(iconWrapper);
-    header.appendChild(videoWrapper);
-    header.appendChild(titleWrapper);
-    header.appendChild(closeWrapper);
-
-    // Place header and text into wrapper element.
-    wrapper.appendChild(header);
-
-    // Create a modal for the hotspot content to appear on mobile mode.
-    var modal = document.createElement('div');
-    modal.innerHTML = wrapper.innerHTML;
-    modal.classList.add('info-hotspot-modal');
-    document.body.appendChild(modal);
-
-    var toggle = function() {
-      wrapper.classList.toggle('visible');
-      modal.classList.toggle('visible');
-    };
-
-    // Show content when hotspot is clicked.
-    wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
-    // Hide content when close icon is clicked.
-    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
-
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
-    stopTouchAndScrollEventPropagation(wrapper);
-
-    return wrapper;
-  } */
-
   // Prevent touch and scroll events from reaching the parent element.
-  function stopTouchAndScrollEventPropagation(element, eventList) {
+  function stopTouchAndScrollEventPropagation(element) {
     var eventList = [
       "touchstart",
       "touchmove",
@@ -556,38 +410,26 @@
   }
 
   function findSceneById(id) {
-    for (var i = 0; i < scenes.length; i++) {
-      if (scenes[i].data.id === id) {
-        return scenes[i];
-      }
-    }
-    return null;
+    return rawDataScenes.find((e) => e.id === id);
   }
 
   function findSceneDataById(id) {
-    for (var i = 0; i < data.scenes.length; i++) {
-      if (data.scenes[i].id === id) {
-        return data.scenes[i];
-      }
-    }
-    return null;
+    return data.scenes.find((e) => e.id === id);
   }
 
+  // search bar button
   document.getElementById("boton").addEventListener("click", function () {
     const name = document.getElementById("formulario").value.toLowerCase().split(" ").join("");
     console.log(name);
-    const vista = scenes.find((scene) => scene.data.name.toLowerCase().split(" ").join("") === name);
+    const vista = rawDataScenes.find((scene) => scene.name.toLowerCase().split(" ").join("") === name);
     console.log(vista);
-    if (vista == undefined) {
+    if (!vista) {
       alert("No encontrado");
     } else {
-      /*alert('Encontrado');
-      console.log(vista);*/
-      //findSceneDataById(switchScene(name));
       switchScene(vista);
     }
   });
 
   // Display the initial scene.
-  switchScene(scenes[0]);
+  switchScene(rawDataScenes[0]);
 })();
