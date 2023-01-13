@@ -13,6 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-'use strict';
+"use strict";
 
 scene.hotspotContainer().createHotspot(document.querySelector("#textInfo"), { yaw: 0.1, pitch: 0.13 });

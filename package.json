@@ -1,0 +1,23 @@
+{
+  "name": "tourtec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write *.js js/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzalez16/TourTec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzalez16/TourTec/issues"
+  },
+  "homepage": "https://github.com/Gonzalez16/TourTec#readme",
+  "devDependencies": {
+    "prettier": "2.8.2"
+  }
+}
