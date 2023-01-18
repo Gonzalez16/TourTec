@@ -73,9 +73,8 @@
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
 
+  //console.log("DataBefore", data.scenes);
   // Create scenes.
-  console.log("DataBefore", data.scenes);
-
   const rawDataScenes = data.scenes;
   function createScene(data) {
     /* var urlPrefix = "//www.marzipano.net/media"; */
@@ -210,7 +209,7 @@
   }
 
   function switchScene(sceneRaw) {
-    console.log(sceneRaw);
+    //console.log(sceneRaw);
     const scene = createScene(sceneRaw);
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
