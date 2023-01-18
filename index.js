@@ -43,10 +43,7 @@
     };
     var mql = matchMedia("(max-width: 500px), (max-height: 500px)");
     setMode();
-    mql.addEventListener("change", () => {
-      setMode();
-    });
-    //mql.addListener(setMode);
+    mql.addListener(setMode);
   } else {
     document.body.classList.add("desktop");
   }
@@ -81,7 +78,8 @@
     var source = Marzipano.ImageUrlSource.fromString("tiles/" + data.id + ".jpg");
     var geometry = new Marzipano.EquirectGeometry([{ width: 4000 }]);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(854, (150 * Math.PI) / 180);
+    //var limiter = Marzipano.RectilinearView.limit.traditional(854, (150 * Math.PI) / 180);
+    var limiter = Marzipano.RectilinearView.limit.traditional(1024, (100 * Math.PI) / 180);
     var view = new Marzipano.RectilinearView({ yaw: Math.PI }, limiter);
 
     var scene = viewer.createScene({
