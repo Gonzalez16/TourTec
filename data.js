@@ -34,8 +34,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "B-zona0", //oriente-station
@@ -62,8 +60,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "B-zona1", //oriente-station
@@ -96,8 +92,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "B-zonaoeste", //oriente-station
@@ -124,8 +118,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "B-zonaeste", //oriente-station
@@ -152,8 +144,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "B-zonanorte", //oriente-station
@@ -186,8 +176,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "B-entrada", //oriente-station
@@ -214,8 +202,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "D1-zona0-1", //oriente-station
@@ -254,8 +240,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "D1-zonaeste-1", //oriente-station
@@ -282,8 +266,6 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
     },
     {
       id: "D1-zonaeste-2", //oriente-station
@@ -310,8 +292,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-zonaeste-3", //oriente-station
@@ -344,8 +326,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-salonredes", //oriente-station
@@ -366,8 +348,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-zonaoeste-1", //oriente-station
@@ -400,8 +382,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-zonaoeste-2", //oriente-station
@@ -422,8 +404,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-IOs-1", //oriente-station
@@ -450,8 +432,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-IOs-2", //oriente-station
@@ -472,8 +454,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-Esc-ext-1", //oriente-station
@@ -500,8 +482,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-Esc-ext-3", //oriente-station
@@ -528,8 +510,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-2piso-zona0", //oriente-station
@@ -556,8 +538,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-2piso-zonaoeste-1", //oriente-station
@@ -584,8 +566,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-2piso-zonaoeste-2", //oriente-station
@@ -612,8 +594,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-entrada", //oriente-station
@@ -640,8 +622,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-Esc-ext-1", //oriente-station
@@ -674,8 +656,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-Esc-ext-3", //oriente-station
@@ -702,8 +684,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-2piso-zonaoeste-4", //oriente-station
@@ -730,8 +712,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-2piso-zonaoeste-1", //oriente-station
@@ -758,8 +740,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zonaeste-1", //oriente-station
@@ -786,8 +768,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zonaeste-2", //oriente-station
@@ -814,8 +796,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zonaeste-3", //oriente-station
@@ -842,8 +824,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zonaoeste-1", //oriente-station
@@ -870,8 +852,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zonaoeste-2", //oriente-station
@@ -898,8 +880,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zonaoeste-3", //oriente-station
@@ -920,8 +902,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Z-zona0-1", //oriente-station
@@ -960,8 +942,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "camino-principal", //oriente-station
@@ -994,8 +976,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Entrada-B-1", //oriente-station
@@ -1022,8 +1004,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-entrada-norte-2", //oriente-station
@@ -1050,8 +1032,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-entrada-norte-1", //oriente-station
@@ -1078,8 +1060,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Entrada-BQ@-1", //oriente-station
@@ -1112,8 +1094,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q@-1", //oriente-station
@@ -1146,8 +1128,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q@-2", //oriente-station
@@ -1174,8 +1156,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q-1", //oriente-station
@@ -1208,8 +1190,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "Q-entrada", //oriente-station
@@ -1230,8 +1212,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q-3", //oriente-station
@@ -1252,8 +1234,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q-A-H-3", //oriente-station
@@ -1292,8 +1274,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q-A-H-4", //oriente-station
@@ -1326,8 +1308,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q-A-H-3.1", //oriente-station
@@ -1354,8 +1336,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "B-Q-A-H-3.2", //oriente-station
@@ -1388,8 +1370,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-entrada-norte-1", //oriente-station
@@ -1422,8 +1404,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-J-T-1", //oriente-station
@@ -1456,8 +1438,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-entrada", //oriente-station
@@ -1484,8 +1466,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-J-T-F-G-1", //oriente-station
@@ -1518,8 +1500,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-J-T-2", //oriente-station
@@ -1558,8 +1540,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-J-T-3", //oriente-station
@@ -1586,8 +1568,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-1", //oriente-station
@@ -1614,8 +1596,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-2", //oriente-station
@@ -1642,8 +1624,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-K-1", //oriente-station
@@ -1670,8 +1652,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-K-2", //oriente-station
@@ -1704,8 +1686,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-1", //oriente-station
@@ -1732,8 +1714,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-3", //oriente-station
@@ -1760,8 +1742,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-4", //oriente-station
@@ -1794,8 +1776,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-6", //oriente-station
@@ -1828,8 +1810,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-7", //oriente-station
@@ -1856,8 +1838,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-8", //oriente-station
@@ -1884,8 +1866,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-Z-1", //oriente-station
@@ -1912,8 +1894,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-Z-2", //oriente-station
@@ -1946,8 +1928,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "K-9", //oriente-station
@@ -1974,8 +1956,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-1", //oriente-station
@@ -2002,8 +1984,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-2", //oriente-station
@@ -2030,8 +2012,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-3", //oriente-station
@@ -2064,8 +2046,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-4", //oriente-station
@@ -2086,8 +2068,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-7", //oriente-station
@@ -2120,8 +2102,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-8", //oriente-station
@@ -2154,8 +2136,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "EAD-1", //oriente-station
@@ -2182,8 +2164,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "EAD-2", //oriente-station
@@ -2210,8 +2192,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "EAD-4", //oriente-station
@@ -2238,8 +2220,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "EAD-5", //oriente-station
@@ -2272,8 +2254,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "EAD-6", //oriente-station
@@ -2294,8 +2276,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-V-1", //oriente-station
@@ -2322,8 +2304,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-V-2", //oriente-station
@@ -2350,8 +2332,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-V-EN-2", //oriente-station
@@ -2384,8 +2366,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-V-EN-3", //oriente-station
@@ -2412,8 +2394,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "I-V-EN-4", //oriente-station
@@ -2440,8 +2422,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-entrada-oeste", //oriente-station
@@ -2474,8 +2456,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-F-G-2", //oriente-station
@@ -2508,8 +2490,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-F-G-3", //oriente-station
@@ -2536,8 +2518,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "H-F-G-4", //oriente-station
@@ -2564,8 +2546,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "J-entrada-norte-1", //oriente-station
@@ -2598,8 +2580,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "T-entrada-2", //oriente-station
@@ -2626,8 +2608,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-Z-1", //oriente-station
@@ -2654,8 +2636,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-Z-3", //oriente-station
@@ -2682,8 +2664,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-Z-5", //oriente-station
@@ -2710,8 +2692,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "D1-Z-6", //oriente-station
@@ -2744,8 +2726,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIOPASI", //oriente-station
@@ -2778,8 +2760,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO1", //oriente-station
@@ -2812,8 +2794,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO2", //oriente-station
@@ -2840,8 +2822,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO3", //oriente-station
@@ -2868,8 +2850,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO4", //oriente-station
@@ -2896,8 +2878,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO5", //oriente-station
@@ -2924,8 +2906,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO6", //oriente-station
@@ -2952,8 +2934,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "BIBLIO7", //oriente-station
@@ -2980,8 +2962,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "PASICAFE", //oriente-station
@@ -3014,8 +2996,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CAFE1", //oriente-station
@@ -3042,8 +3024,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CAFE2", //oriente-station
@@ -3070,8 +3052,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CAFE3", //oriente-station
@@ -3092,8 +3074,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHA", //oriente-station
@@ -3126,8 +3108,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHATECHA1", //oriente-station
@@ -3160,8 +3142,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHATECHA3", //oriente-station
@@ -3182,8 +3164,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHAPASILLO1", //oriente-station
@@ -3216,8 +3198,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "FUT7", //oriente-station
@@ -3238,8 +3220,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHAPASILLO6", //oriente-station
@@ -3272,8 +3254,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHAPASILLO6-6", //oriente-station
@@ -3300,8 +3282,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHAPASILLO8", //oriente-station
@@ -3328,8 +3310,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CANCHAPASILLO9", //oriente-station
@@ -3350,8 +3332,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
     {
       id: "CAMPO1", //oriente-station
@@ -3372,8 +3354,8 @@ var data = {
         },
       ],
       infoHotspots: [{}],
-      photoHotspots: [{}],
-      videoHotspots: [{}],
+
+
     },
   ],
   name: "Sample Tour",

@@ -74,7 +74,6 @@
   // Create scenes.
   const rawDataScenes = data.scenes;
   function createScene(data) {
-    /* var urlPrefix = "//www.marzipano.net/media"; */
     var source = Marzipano.ImageUrlSource.fromString("tiles/" + data.id + ".jpg");
     var geometry = new Marzipano.EquirectGeometry([{ width: 4000 }]);
 
@@ -96,10 +95,10 @@
     });
 
     // Create info hotspots.
-    data.infoHotspots.forEach(function (hotspot) {
+   /*  data.infoHotspots.forEach(function (hotspot) {
       var element = createInfoHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
-    });
+    }); */
 
     return {
       data: data,
@@ -207,21 +206,17 @@
   }
 
   function switchScene(sceneRaw) {
-    //console.log(sceneRaw);
+    console.log(sceneRaw);
     const scene = createScene(sceneRaw);
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
     startAutorotate();
-    updateSceneName(scene);
+    sceneNameElement.innerHTML = sanitize(scene.data.name);
     updateSceneList(scene);
   }
 
-  function updateSceneName(scene) {
-    sceneNameElement.innerHTML = sanitize(scene.data.name);
-  }
-
-  // Cuando le den exclusivamente click al menu traer las escenas de ese listado.
+  // Hace que en el listado aparezca remarcado para saber en donde esta.
   function updateSceneList(scene) {
     for (var i = 0; i < sceneElements.length; i++) {
       var el = sceneElements[i];
@@ -305,6 +300,7 @@
     return wrapper;
   }
 
+  /* No se implemento de momento
   function createInfoHotspotElement(hotspot) {
     // Create wrapper element to hold icon and tooltip.
     var wrapper = document.createElement("div");
@@ -330,7 +326,7 @@
     var icon = document.createElement('img');
     icon.src = 'img/search.png';
     icon.classList.add('search');
-    iconWrapper.appendChild(icon);*/
+    iconWrapper.appendChild(icon);
 
     // Create title element.
     var titleWrapper = document.createElement("div");
@@ -384,7 +380,7 @@
     stopTouchAndScrollEventPropagation(wrapper);
 
     return wrapper;
-  }
+  } */
 
   // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element) {
@@ -417,9 +413,7 @@
   // search bar button
   document.getElementById("boton").addEventListener("click", function () {
     const name = document.getElementById("formulario").value.toLowerCase().split(" ").join("");
-    console.log(name);
     const vista = rawDataScenes.find((scene) => scene.name.toLowerCase().split(" ").join("") === name);
-    console.log(vista);
     if (!vista) {
       alert("No encontrado");
     } else {
